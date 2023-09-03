@@ -3,7 +3,7 @@ import { get, parse, set } from "./utils.ts";
 
 const test = Deno.test;
 
-test("parse", (t) => {
+test("parse", () => {
   let url = "https://www.google.com/search?q=deno";
 
   assertEquals(parse(url), {
